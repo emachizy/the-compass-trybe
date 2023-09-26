@@ -6,10 +6,16 @@ import heroImg from "./../assets/images/hero-img01.jpg";
 import heroImg02 from "../assets/images/hero-img02.jpg";
 import heroVideo from "../assets/images/hero-video.mp4";
 import worldImg from "../assets/images/world.png";
+import experienceImg from "../assets/images/experience.png";
+
 import Subtitle from "./../shared/Subtitle";
+import Newsletter from "../shared/Newsletter";
 
 import SearchBar from "../shared/SearchBar";
 import ServiceList from "../services/ServiceList";
+import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
+import MasonryImagesGallery from "../components/Image-gallery/MasonryImagesGallery";
+import Testimonial from "../components/Testimonial/Testimonials";
 
 const Home = () => {
   return (
@@ -76,10 +82,91 @@ const Home = () => {
               <Subtitle subtitle={"Explore"} />
               <h2 className="featured__tour-title">Our featured tours</h2>
             </Col>
+            <FeaturedTourList />
           </Row>
         </Container>
       </section>
       {/* =========== featured tour section end ========== */}
+
+      {/* =========== experience section start ========== */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="6">
+              <div className="experience__content">
+                <Subtitle subtitle={"Experience"} />
+
+                <h2>
+                  With our all experience <br /> we will serve you
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  <br />
+                  Quibusdam, voluptatem. Lorem ipsum dolor sit amet consectetur.
+                </p>
+              </div>
+
+              <div className="counter__wrapper d-flex align-items-center gap-5">
+                <div className="counter__box">
+                  <span>12k+</span>
+                  <h6>Successful trip</h6>
+                </div>
+                <div className="counter__box">
+                  <span>2k+</span>
+                  <h6>Regular client</h6>
+                </div>
+                <div className="counter__box">
+                  <span>15</span>
+                  <h6>Years experience</h6>
+                </div>
+              </div>
+            </Col>
+            <Col lg="6">
+              <div className="experience__box__img">
+                <img src={experienceImg} alt="" />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      {/* =========== experience section end ============ */}
+
+      {/* =========== gallery section start ============ */}
+
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12">
+              <Subtitle subtitle={"Gallery"} />
+              <h2 className="gallery__title">Our gallery</h2>
+            </Col>
+            <Col lg="12">
+              <MasonryImagesGallery />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      {/* =========== gallery section end ============ */}
+
+      {/* ===========testimonial section start ========== */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12">
+              <Subtitle subtitle={"Testimonial"} />
+              <h2 className="testimonial__tile">
+                What our clients have to say
+              </h2>
+            </Col>
+            <Col lg="12">
+              <Testimonial />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      {/* ===========testimonial section end ========== */}
+      <Newsletter />
     </>
   );
 };

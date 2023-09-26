@@ -1,0 +1,14 @@
+
+.newsletter {
+    background: #cae5f4;
+    padding: 0;
+    margin: 3rem;
+}
+
+.newsletter__img {
+    width: 100%;
+}
+
+.newsletter__content {
+    padding: 50px 0;
+}
