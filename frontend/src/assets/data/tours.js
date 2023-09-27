@@ -9,8 +9,8 @@ import tourImg07 from "../images/tour-img07.jpg";
 const tours = [
   {
     id: "01",
-    title: "Westminister Bridge",
-    city: "London",
+    title: "War Museum",
+    city: "Umuahia-Nigeria",
     distance: 300,
     price: 99,
     maxGroupSize: 10,
@@ -27,8 +27,8 @@ const tours = [
   },
   {
     id: "02",
-    title: "Bali, Indonesia",
-    city: "Indonesia",
+    title: "Iva Valley",
+    city: "Enugu state - Nigeria",
     distance: 400,
     price: 99,
     maxGroupSize: 8,
@@ -45,8 +45,8 @@ const tours = [
   },
   {
     id: "03",
-    title: "Snowy Mountains, Thailand",
-    city: "Thailand",
+    title: "Akheur Cave",
+    city: " Igbo-Eze,South,Nigeria",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
@@ -63,8 +63,8 @@ const tours = [
   },
   {
     id: "04",
-    title: "Beautiful Sunrise, Thailand",
-    city: "Thailand",
+    title: "Adada River Source,",
+    city: "Enugu state-Nigeria",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
@@ -81,8 +81,8 @@ const tours = [
   },
   {
     id: "05",
-    title: "Nusa Pendia Bali, Indonesia",
-    city: "Indonesia",
+    title: "Ululo Waterside",
+    city: "Enugu state-Nigeria",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
